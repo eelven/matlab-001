@@ -1,0 +1,62 @@
+3.1 Introduction to Functions (5:39)
+
+The built-in function named rand, creates random numbers between 0 and 1
+The numbers are uniformly distributed and that means that any number in
+that range is equally likely to be chosen. Here's an example of how we
+might call it.
+Creates a 3x4 matrix of random numbers between 0 and 1
+>> rand(3,4)
+
+ans =
+
+    0.8147    0.9134    0.2785    0.9649
+    0.9058    0.6324    0.5469    0.1576
+    0.1270    0.0975    0.9575    0.9706
+
+>>
+What if we needed radom numbers between one and ten instead?
+ 1+rand(3,4)*9
+(multiply them by 9, stretch the range to go from 0 to 9 and adding 1
+shifts the range to go from 1 to 10)
+ans =
+
+    7.2535    1.3100    7.8897    5.4079
+    3.8539    4.9487    8.1568    5.0103
+    9.5520    4.4340    2.6819    6.8168
+
+>> 
+So, let's create our own function that does what we want it to do,
+then we can just call that function repeatedly. Let's call it myRand.
+We create a function by using the Editor. We can get it with the 
+command Edit and the editor window.
+>> edit
+The Editor is the place that you type in code that you can save in a
+file and the code we're going to type into the Editor will be a function.
+>> edit
+function myRand
+a = 1+rand(3,4)*9
+end
+And I'm going to put an optional end in here. Notice that function and
+end both turn blue. These are key works. The word myRand is of course
+the name of our function. Now we want to be able to run this function
+and in order to run the function we have to save it into a file.
+MATLAB reminds us that we haven't yet saved it in a file with this little
+word untitled and this little asterisk right . To save our function into
+its file, we click in Save ribbon and save myRand.m (all MATLAB must be
+stored in files with the extension dot m)
+The file is saved right in current folder, that's exactly where we want
+it to be, because that's where MATLAB look for it when we tell it to run it.
+We've opened the Editor, we've typed in a function, we've saved it into
+a file. We can now run it by typing its name in the command window, just
+like we would for a built-in function. Let's do it:
+>> myRand
+
+a =
+
+    7.7614    7.2917    5.9249    3.3176
+    3.2959    9.0181    2.2476    8.5665
+    5.5536    9.6336    2.3436    3.2885
+
+--__--__--__--__--
+
+3.2 Function I/O (22:15)
