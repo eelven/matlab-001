@@ -60,3 +60,10 @@ a =
 --__--__--__--__--
 
 3.2 Function I/O (22:15)
+During that little fraction of a second that myRand was running, fraction
+of a microsecond, the variable a was created right here, stored in myRand's
+workspace and then when myRand was done, its workspace we deleted. It
+doesn't show up in the command window's workspace. The a that we see there
+is a completely different variable from the variable that was created over here.
+One that was assigned this array of random numbers is gone forever along with 
+these values down here.
