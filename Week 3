@@ -67,3 +67,37 @@ doesn't show up in the command window's workspace. The a that we see there
 is a completely different variable from the variable that was created over here.
 One that was assigned this array of random numbers is gone forever along with 
 these values down here.
+
+
+--__--_--
+
+3.3 Formal Definition of Functions (2:51)
+
+The function declaration: what the world sees
+-> function [out_arg1, out_arg2, ...] = 
+    function_name (in_arg1, in_arg2, ...)
+    
+Examples:
+1. function func
+2. function func(in1)
+3. function func(in1, in2)
+4. function out1 = func
+5. function out1 = func(in1)
+6. function out1 = func(in1, in2)
+7. function [out1, out2] = func
+8. function [out1, out2] = func(in1)
+9. function [out1, out2] = func(in1, in2)
+
+Function names
+Use meaningful names that tell you something about what your function does
+Do not use names of built-in functions, sqrt, plot, sin, etc.
+.It will get really confusing really fast
+.And, if you do, you can't use the built-in version.
+
+Use the built-in function named "exist". The command help exist will help you
+learn how to use it.
+
+--__--__--
+
+3.4 Subfunctons (6:17)
+
