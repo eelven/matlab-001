@@ -101,3 +101,20 @@ learn how to use it.
 
 3.4 Subfunctons (6:17)
 
+We can define multiple functions in the same m-file and have them call each other.
+
+Main function can be called by other functions outside the file and the other
+function are called "subfunctions" or "local" functions and they can only be
+called by functions inside the file.
+Like other functions, all their variables are local, and this means that the
+variables in a function are unavailable to the command window and unavailable
+to all other functions, whether or not they're in the same file.
+
+The only way to exchange information between these functions is with 
+input and output arguments.
+
+You can put as many subfunctions in an m-file as you want, but the first
+function is always the only one that can be called from outside.
+
+--__--__--
+
